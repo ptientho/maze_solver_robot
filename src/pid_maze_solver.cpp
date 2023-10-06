@@ -38,13 +38,13 @@ public:
         opt);
 
     Kpt = 0.5;
-    Kit = 0.001;
+    Kit = 0.04;
     Kdt = 0.2;
     sum_alpha = 0.0;
 
     Kpf = 0.5;
-    Kif = 0.001;
-    Kdf = 0.2;
+    Kif = 0.01;
+    Kdf = 0.22;
     sum_rho = 0.0;
 
     dt = 0.005;
@@ -215,19 +215,19 @@ int main(int argc, char **argv) {
   std::string node_name = "pid_maze_solver_node";
 
   // std::array<double, 2> sp1 = {0.0, 0.0}; // pos: x,y, orientation: x,y,z,w
-  std::array<double, 2> sp2 = {0.5, -0.11};
-  std::array<double, 2> sp3 = {0.5, -1.4};
-  std::array<double, 2> sp4 = {1.1, -1.4};
-  std::array<double, 2> sp5 = {1.1, -0.8};
-  std::array<double, 2> sp6 = {1.45, -0.8};
-  std::array<double, 2> sp7 = {1.45, -0.3};
+  std::array<double, 2> sp2 = {0.50, -0.10};
+  std::array<double, 2> sp3 = {0.50, -1.36};
+  std::array<double, 2> sp4 = {1.03, -1.37};
+  std::array<double, 2> sp5 = {1.04, -0.83};
+  std::array<double, 2> sp6 = {1.42, -0.84};
+  std::array<double, 2> sp7 = {1.43, -0.29};
   std::array<double, 2> sp8 = {1.95, -0.3};
-  std::array<double, 2> sp9 = {1.95, 0.6};
-  std::array<double, 2> sp10 = {1.55, 0.6};
-  std::array<double, 2> sp11 = {1.55, 0.2};
-  std::array<double, 2> sp12 = {1.05, 0.2};
-  std::array<double, 2> sp13 = {0.45, 0.6};
-  std::array<double, 2> sp14 = {0.0, 0.6};
+  std::array<double, 2> sp9 = {1.95, 0.58};
+  std::array<double, 2> sp10 = {1.52, 0.58};
+  std::array<double, 2> sp11 = {1.48, 0.21};
+  std::array<double, 2> sp12 = {0.98, 0.19};
+  std::array<double, 2> sp13 = {0.69, 0.50};
+  std::array<double, 2> sp14 = {0.19, 0.53};
 
   std::queue<std::array<double, 2>> trajectory;
   trajectory.push(sp2);
